@@ -9,13 +9,11 @@ namespace docker_file_sample
         public static void Main(string[] args)
         {
             var i = 0;
-            while (!Console.KeyAvailable)
+            while (true)
             {
                 Console.WriteLine($"Counter: {++i}");
                 Thread.Sleep(1000);
             }
-
-            Console.WriteLine("Stopping");
         }
     }
 }
